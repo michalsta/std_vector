@@ -15,7 +15,7 @@ __version__ = "0.0.1"
 
 ext_modules = [
     Pybind11Extension(
-        "python_example",
+        "std_vector_cpp",
         ["src/main.cpp"],
         # Example: passing in the version to the compiled code
         define_macros=[("VERSION_INFO", __version__)],
@@ -23,7 +23,7 @@ ext_modules = [
 ]
 
 setup(
-    name="python_example",
+    name="std_vector",
     version=__version__,
     author="Sylvain Corlay",
     author_email="sylvain.corlay@gmail.com",
